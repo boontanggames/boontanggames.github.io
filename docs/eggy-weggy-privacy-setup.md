@@ -1,25 +1,24 @@
 # Eggy Weggy privacy policy setup
 
-Prepared on 21 October 2026.
+Updated on 21 October 2026.
 
-## Result
+## Configured policy and contact
 
-A dedicated, responsive policy draft is prepared at `eggy-weggy-privacy.html`, matching the existing website. Its intended public address is:
+Policy: https://boontanggames.com/eggy-weggy-privacy.html
 
-https://boontanggames.com/eggy-weggy-privacy.html
+Data controller: **Kenneth Burton, trading as Boontang Games**, United Kingdom.
 
-The page is explicitly a draft, has no effective date and requests no indexing. It is not yet linked from the live navigation or sitemap. The existing website notice remains a separate document.
+Public support/privacy contact: **boontanggames@gmail.com**, confirmed by the owner on 21 October 2026. The owner operates the brand personally and has not incorporated Boontang Games Ltd. No trademark or incorporation status is claimed.
 
-## Two details needed from the owner
+The policy has an effective/update date of 21 October 2026 and contains no draft or owner-detail placeholders. It is linked from the homepage, game page and separate website privacy notice, and included in the sitemap. The studio contact button opens the confirmed public mailbox.
 
-1. The legal operator: an individual trading as Boontang Games, or the full registered company name. Do not assume that the brand is a limited company.
-2. A working public privacy/support email. The website currently publishes no mailbox. A Git commit author address is not enough to establish the intended privacy contact, so no email has been silently repurposed.
+The game policy covers local saves/play notes, optional Google test adverts and consent controls, age groups, backups, user-shared reports, disabled checkout, retention, privacy rights and complaints. Support email is handled through Gmail. Necessary game/choice processing and support/security use limited legitimate interests; legally required consent remains separate. Publishing the notice does not configure live ads, establish parental consent or activate purchases.
 
-Replace the two clearly marked owner-detail fields only after these facts are supplied. Add any other contact/representative details that apply to the operator and actual launch markets. Do not copy a home address or personal contact details from an unrelated conversation.
+The website notice separately covers GitHub Pages hosting and the confirmed email contact. Neither page introduces a form, tracker or advertising script.
 
 ## Reviewed behaviour
 
-The draft is based on Android development source 1.16.0 / code 25, inspected on 21 October 2026 at snapshot `e107b973bb97e4de99633e1e1e3033be4c32ec36`. All cited file hashes matched that snapshot. The latest published preview is 1.14.0 / code 23; it retains the earlier adult-only advertising restriction. The next-release policy must not claim that the newer child advertising path has already shipped.
+The policy was prepared from Android development source 1.16.0 / code 25, inspected on 21 October 2026 at snapshot `e107b973bb97e4de99633e1e1e3033be4c32ec36`. All cited file hashes matched that snapshot. The latest published preview is 1.14.0 / code 23; it retains the earlier adult-only advertising restriction. The next-release policy must not claim that the newer child advertising path has already shipped.
 
 | Area | Observed behaviour and policy treatment |
 | --- | --- |
@@ -27,8 +26,8 @@ The draft is based on Android development source 1.16.0 / code 25, inspected on 
 | Local play notes | `web/playtest.js` retains up to 300 recent attempts; `web/app.js` records them during saving. This is not a separate opt-in or a remote analytics upload. The policy discloses the local record and rollover limit. |
 | Advertising | Native Google Mobile Ads 24.9.0; Google UMP 4.0.0. Official test app/unit IDs remain configured. Initialisation and loads follow explicit advertising/privacy actions. No banner, interstitial or app-open placement is implemented. |
 | Age | `PrivacyGate.java` offers under13, teen, adult and unknown. The range is saved locally. Next-release younger/unknown requests receive conservative child-directed/non-personalised configuration; adult eligibility remains separate. |
-| Child advertising limits | Request flags are present. Real SDK creative behaviour, prohibited identifier handling and five-second dismissal remain unverified. The draft does not certify compliance, parental consent or an absence of SDK data processing. |
-| Purchases | Google Play Billing foundations exist; checkout defaults off. New checkout remains adult-only, with no implemented supervised-child purchase path. The draft describes disabled checkout and requires an update before activation. |
+| Child advertising limits | Request flags are present. Real SDK creative behaviour, prohibited identifier handling and five-second dismissal remain unverified. The policy does not certify compliance, parental consent or an absence of SDK data processing. |
+| Purchases | Google Play Billing foundations exist; checkout defaults off. New checkout remains adult-only, with no implemented supervised-child purchase path. The policy describes disabled checkout and requires an update before activation. |
 | Backups | User-selected document export/import. Files include game/progress/preferences and permitted inventory; lives, ad allowances and receipt ledgers stay local. Android automatic backup is disabled. Exported files must be deleted separately. |
 | Support | A player can copy a prepared report or open a GitHub report URL. Opening that URL transmits its query text to GitHub before issue submission. The draft explicitly explains this distinction and does not promise anonymous/private GitHub support. |
 | Permissions/security | Application manifest requests internet, network state and vibration, not contacts/camera/microphone/precise location. Do not infer zero approximate-location collection: an ad service can derive it from IP. App storage is not represented as encrypted. |
@@ -36,27 +35,24 @@ The draft is based on Android development source 1.16.0 / code 25, inspected on 
 
 Key evidence: `android/AndroidManifest.xml`, `android/build.gradle`, `android/src/com/eggyweggy/game/PrivacyGate.java`, `AdPrivacyPolicy.java`, `RewardedAds.java`, `MainActivity.java`, `SupportRequestPolicy.java`, `web/app.js`, `web/playtest.js`, `android/README.md`, and `docs/child-advertising-plan.md` in the game source.
 
-## Finish the website setup
 
-Once the owner details are supplied:
+## Source check on completion
 
-1. Replace the two owner-detail placeholders, review the proposed lawful bases and support retention criteria, and identify the actual support provider and applicable international-transfer arrangements. The draft's legal bases and retention wording are proposed operating practices, not proof that these decisions or safeguards already exist.
-2. Confirm which APK/source the completed notice describes. Keep version-specific advertising differences explicit if multiple versions remain distributed.
-3. Set an actual effective/update date, remove draft status and the noindex directive, and use a final page title and description.
-4. Add an Eggy Weggy privacy link to the homepage, game page and website-privacy page. Update the website notice's current “will be published” wording to link to the completed policy. Add the final URL to the sitemap and update the repository setup notes.
-5. Check the deployed HTTPS URL without signing in. Google Play expects an accessible, non-editable HTML policy, and an in-app policy link or text.
-6. Add the completed notice and working privacy contact to the Android Privacy screen. The packaged WebView deliberately blocks general network navigation: preserve that boundary, offer readable offline text, and if opening the public URL use a narrowly allowed native browser action. A website change does not modify an installed APK.
-7. Enter this final URL in Play Console and reconcile Data safety, target audience, ads and store contact fields against the exact distributed build. Do not submit the website-only notice or claim “no data collected” merely because puzzle saves are local.
+Game main was rechecked at `c43f7651ce0f36a4513939ab35d22d8843cd051b`. The relevant gameplay, local-notes, age/privacy, advertising, manifest and dependency file hashes still match the reviewed snapshot. The README still identifies 1.14.0 as the latest published preview and 1.16.0 as unpublished source. The policy distinguishes those versions.
 
-This draft preparation does not publish another APK, enable live ads or checkout, submit a Play listing, alter DNS or change the current game.
+## App and store integration
 
-## Separate checks before live advertising or paid products
+This website change does not modify an installed APK. The existing Android Privacy screen has a short local explanation and advertising controls, but still needs the complete dated policy and confirmed contact to be included in a subsequent Android update.
 
-- Validate the exact SDK/version and merged manifest rather than relying solely on the newest provider documentation, which currently describes a newer Ads SDK than the pinned 24.9.0.
-- Check actual SDK identifier/data behaviour, applicable consent/legal basis, and any parental-consent requirements. Under-age request flags and a non-personalised label do not establish those facts.
-- Complete the existing child/unknown ad-content, five-second close and earned-reward checks before enabling live child advertising.
-- Record the actual Google/AdMob consent configuration, recipients, transfer safeguards and data-retention practices. Configure any required public app-ads.txt using the owner's authentic seller details.
-- Update purchase disclosures only when the real verification, fulfilment, account/recovery and refund arrangements are known. Do not promise cross-device consumable recovery in the current local-only implementation.
+When adding it, preserve the packaged WebView's network boundary: include readable offline text, and use a narrowly allowed native browser action if opening the public policy URL. Keep any external email/browser actions explicit.
+
+Before a Google Play submission, reconcile the policy, in-app access, Data safety, target audience, ads and store contact fields with the exact distributed build. The current app has no game accounts. Do not claim “no data collected” solely because puzzle saves remain local.
+
+## Production services
+
+The existing game launch work still includes actual ad-content/identifier and child/unknown dismissal verification, consent configuration and any required parental/legal basis arrangements. Keep live advertising and checkout disabled until their separate requirements are met. A notice does not establish those tests or create purchase verification/recovery infrastructure.
+
+Recheck the exact SDK versions rather than assuming the latest provider disclosure applies unchanged to the pinned 24.9.0. Obtain genuine owner seller details before adding app-ads.txt. If live ads, purchases, accounts, cloud saving or the controller change, update the policy before the new processing begins.
 
 ## Official references checked
 
@@ -69,6 +65,9 @@ This draft preparation does not publish another APK, enable live ads or checkout
 - [Google UMP European privacy guidance](https://developers.google.com/admob/android/privacy/gdpr): applicable consent, withdrawal and separate under-age treatment.
 - [ICO: introduction to the Children's code](https://ico.org.uk/for-organisations/uk-gdpr-guidance-and-resources/childrens-information/childrens-code-guidance-and-resources/introduction-to-the-childrens-code/): services likely to be accessed by under-18s and high-privacy defaults.
 
+
 ## Verification
 
-The page reuses the existing local stylesheet and dragon head, with no scripts, external fonts or trackers. Local HTML checks passed: unique section IDs, valid section anchors, existing local resources and no script elements. The updated existing responsive test passes JavaScript syntax checking and includes this page at 320, 360, 390, 430, 768 and 1280px. A local Playwright run could not start because this workspace has no Chromium executable; the repository's existing pull-request workflow installs Chromium and runs those checks. Its result must be checked before merging. Keyboard navigation, enlarged-text layout and the eventual deployed public URL still need browser verification.
+Local checks cover HTML structure, section targets, existing relative links/resources, the canonical policy URL, the confirmed contact, absence of draft placeholders and sitemap XML. The existing pull-request workflow checks all pages, including the game policy, for horizontal overflow and broken images at 320, 360, 390, 430, 768 and 1280px. Its final result and the subsequent deployment are recorded in the pull request.
+
+Public release is complete only when the deployed HTTPS policy URL is accessible without signing in and contains the confirmed operator/contact details.
