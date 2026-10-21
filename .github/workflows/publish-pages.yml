@@ -1,0 +1,57 @@
+name: Publish website on GitHub Pages
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+
+concurrency:
+  group: boontang-website-pages-publication
+  cancel-in-progress: false
+
+jobs:
+  publish:
+    name: Request and verify the configured Pages build
+    if: github.ref == 'refs/heads/main'
+    runs-on: ubuntu-latest
+    timeout-minutes: 8
+    env:
+      GH_TOKEN: ${{ github.token }}
+      EXPECTED_COMMIT: ${{ github.sha }}
+    steps:
+      - name: Publish the existing main-branch website
+        run: |
+          python3 - <<'PY'
+          import json, os, subprocess, time
+
+          repository = os.environ['GITHUB_REPOSITORY']
+          expected = os.environ['EXPECTED_COMMIT']
+          def api(path, method='GET'):
+              return json.loads(subprocess.check_output(
+                  ['gh', 'api', '--method', method, path], text=True))
+
+          settings = api(f'repos/{repository}/pages')
+          if (settings.get('build_type') != 'legacy'
+                  or settings.get('source') != {'branch': 'main', 'path': '/'}
+                  or settings.get('cname') != 'boontanggames.com'):
+              raise SystemExit('Pages source/domain changed; inspect before publishing')
+          head = api(f'repos/{repository}/commits/main?check={time.time_ns()}')['sha']
+          if head != expected:
+              raise SystemExit('Main moved after dispatch; publish its current revision separately')
+          api(f'repos/{repository}/pages/builds', 'POST')
+          print(f'Requested the configured Pages build for {expected}', flush=True)
+          for _ in range(30):
+              result = api(f'repos/{repository}/pages/builds/latest?check={time.time_ns()}')
+              if result.get('commit') == expected:
+                  status = result.get('status')
+                  if status == 'built':
+                      print('Published https://boontanggames.com/', flush=True)
+                      break
+                  if status == 'errored':
+                      raise SystemExit(f'Pages failed: {result.get("error")}')
+              time.sleep(10)
+          else:
+              raise SystemExit('The requested Pages build has not completed; inspect it before retrying')
+          PY
