@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://boontanggames.com/sitemap.xml
