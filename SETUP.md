@@ -3,11 +3,11 @@
 This is a draft static site for **boontanggames.com**, hosted free using GitHub Pages.
 
 ## Review first
-- Review the homepage and game descriptions for accuracy.
+- Review the homepage and Eggy Weggy description for accuracy.
 - Replace the temporary **B✦** monogram with your **actual winking dragon logo** once the original asset is available and licensed for public use.
 - Supply a public support email when ready; no private personal email has been published.
-- The included `privacy.html` is **website information only**. Do **not** submit it as an app privacy policy to Google Play. Audit each game's actual Android SDKs and data flows and publish a complete, accurate game-specific policy before release.
-- The site intentionally does not link to private GitHub game repositories or pretend either title is available on Google Play. Add real public download links only after publication.
+- The included `privacy.html` is **website information only**. Do **not** submit it as an app privacy policy to Google Play. Audit Eggy Weggy's actual Android SDKs and data flows and publish a complete, accurate app-specific policy before release.
+- The site intentionally does not link to the private Eggy Weggy repository or imply it is available on Google Play. Add real public download links only after publication.
 
 ## Publish on GitHub Pages
 1. Merge the draft pull request after checking the content.
@@ -32,6 +32,6 @@ The site uses plain HTML and CSS with no third-party scripts, build tools or ext
 ## Future content
 - Upload the original winking dragon logo.
 - Replace the illustrative egg artwork with actual authorised game screenshots.
-- Publish a genuine support mailbox and accurate per-app privacy policy.
+- Publish a genuine support mailbox and an accurate Eggy Weggy app privacy policy.
 - Update release/store links after public launches.
-- Consider adding a dedicated Field Command project page when an Android release is available.
+- Add pages for other games only if you decide to develop and release them in future.
