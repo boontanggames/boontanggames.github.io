@@ -18,27 +18,29 @@ The website notice separately covers GitHub Pages hosting and the confirmed emai
 
 ## Reviewed behaviour
 
-The policy was prepared from Android development source 1.16.0 / code 25, inspected on 21 October 2026 at snapshot `e107b973bb97e4de99633e1e1e3033be4c32ec36`. All cited file hashes matched that snapshot. The latest published preview is 1.14.0 / code 23; it retains the earlier adult-only advertising restriction. The next-release policy must not claim that the newer child advertising path has already shipped.
+The policy now describes the published **1.16.0 / code 25 GitHub testing preview**, whose exact APK source is `78dd94e3704ce627b4b7ecb87d4545c75893e7c8`. Publication was approved by the owner on 21 October 2026. This replaces the previous policy's distinction between published 1.14.0 and unpublished 1.16.0. Google Play submission, live adverts and cash checkout remain disabled/deferred. Policy publication does not activate those services or certify the game.
 
 | Area | Observed behaviour and policy treatment |
 | --- | --- |
 | Core game | Offline puzzle play; device-local progress, settings, active board, challenges, lives and wallet. No game account, chat, public leaderboard or cloud-save service. |
 | Local play notes | `web/playtest.js` retains up to 300 recent attempts; `web/app.js` records them during saving. This is not a separate opt-in or a remote analytics upload. The policy discloses the local record and rollover limit. |
-| Advertising | Native Google Mobile Ads 24.9.0; Google UMP 4.0.0. Official test app/unit IDs remain configured. Initialisation and loads follow explicit advertising/privacy actions. No banner, interstitial or app-open placement is implemented. |
-| Age | `PrivacyGate.java` offers under13, teen, adult and unknown. The range is saved locally. Next-release younger/unknown requests receive conservative child-directed/non-personalised configuration; adult eligibility remains separate. |
+| Advertising | Native Google Mobile Ads 25.4.0; Google UMP 4.0.0. Official test app/unit IDs remain configured. Initialisation and loads follow explicit advertising/privacy actions. No banner, interstitial or app-open placement is implemented. The exact debug/sample-ID exception may omit publisher consent messages; production/non-debug adult flows refresh UMP before each requested ad. |
+| Age | `PrivacyGate.java` offers under13, teen, adult and unknown, with no default. The range is saved locally. TFAT CHILD, restricted publisher personalisation and non-personalised requests apply to younger, teen, unknown and unready profiles. All audiences have a G content limit. Age answers are not parental authorisation. |
 | Child advertising limits | Request flags are present. Real SDK creative behaviour, prohibited identifier handling and five-second dismissal remain unverified. The policy does not certify compliance, parental consent or an absence of SDK data processing. |
 | Purchases | Google Play Billing foundations exist; checkout defaults off. New checkout remains adult-only, with no implemented supervised-child purchase path. The policy describes disabled checkout and requires an update before activation. |
 | Backups | User-selected document export/import. Files include game/progress/preferences and permitted inventory; lives, ad allowances and receipt ledgers stay local. Android automatic backup is disabled. Exported files must be deleted separately. |
-| Support | A player can copy a prepared report or open a GitHub report URL. Opening that URL transmits its query text to GitHub before issue submission. The draft explicitly explains this distinction and does not promise anonymous/private GitHub support. |
-| Permissions/security | Application manifest requests internet, network state and vibration, not contacts/camera/microphone/precise location. Do not infer zero approximate-location collection: an ad service can derive it from IP. App storage is not represented as encrypted. |
-| Providers | Google's advertising/consent services, GitHub when chosen, support email provider when established, and user-selected backup providers. No additional analytics or mediation provider was identified in the reviewed integration. |
+| Support | Every profile can copy a prepared report locally. Only a known adult can open its external GitHub URL; the native age/privacy revision is checked again at dispatch. Opening transmits query text before issue submission. The policy explains this distinction and does not promise anonymous/private GitHub support. |
+| Permissions/security | The actual APK excludes advertising-ID and all three Ad Services permissions for every age, and excludes contacts/camera/microphone/precise-location permissions. The publisher first-party-ID opt-out must succeed after initialization and before a load; this is different from App Set ID. Do not infer zero SDK identifiers or approximate-location processing: an ad service can derive general location from IP. App storage is not represented as encrypted. |
+| Providers | Google's advertising/consent services, GitHub when chosen, Gmail for the confirmed public support mailbox, and user-selected backup providers. No additional analytics or mediation adapter was identified in the reviewed integration. Account-side demand sources require separate verification before live activation. |
 
 Key evidence: `android/AndroidManifest.xml`, `android/build.gradle`, `android/src/com/eggyweggy/game/PrivacyGate.java`, `AdPrivacyPolicy.java`, `RewardedAds.java`, `MainActivity.java`, `SupportRequestPolicy.java`, `web/app.js`, `web/playtest.js`, `android/README.md`, and `docs/child-advertising-plan.md` in the game source.
 
 
 ## Source check on completion
 
-Game main was rechecked at `c43f7651ce0f36a4513939ab35d22d8843cd051b`. The relevant gameplay, local-notes, age/privacy, advertising, manifest and dependency file hashes still match the reviewed snapshot. The README still identifies 1.14.0 as the latest published preview and 1.16.0 as unpublished source. The policy distinguishes those versions.
+The published APK from [successful build 39667708084](https://github.com/boontanggames/Eggy-weggy/actions/runs/39667708084) has SHA-256 `e3aa6f3f34eb85b65b2d47739bb97e8122c4fbecb2612ef3e1716d08ac8108e6`. Its actual manifest, SDK/API configuration, sample IDs, packaged assets and signing continuity were verified before release. The game repository records [the release and remaining checks](https://github.com/boontanggames/Eggy-weggy/blob/main/docs/mixed-audience-compliance-audit.md).
+
+The separate current-SDK runtime diagnostic failed in its test-only native observer before Watch or age selection. It is not a successful child-ad request, playback, five-second dismissal or earned-reward test. The public policy describes implemented controls without presenting them as certification or proof that no SDK data is processed.
 
 ## App and store integration
 
@@ -52,7 +54,7 @@ Before a Google Play submission, reconcile the policy, in-app access, Data safet
 
 The existing game launch work still includes actual ad-content/identifier and child/unknown dismissal verification, consent configuration and any required parental/legal basis arrangements. Keep live advertising and checkout disabled until their separate requirements are met. A notice does not establish those tests or create purchase verification/recovery infrastructure.
 
-Recheck the exact SDK versions rather than assuming the latest provider disclosure applies unchanged to the pinned 24.9.0. Obtain genuine owner seller details before adding app-ads.txt. If live ads, purchases, accounts, cloud saving or the controller change, update the policy before the new processing begins.
+Recheck the exact SDK versions rather than assuming the latest provider disclosure applies unchanged to the pinned 25.4.0. Obtain genuine owner seller details before adding app-ads.txt. If live ads, purchases, accounts, cloud saving or the controller change, update the policy before the new processing begins.
 
 ## Official references checked
 
