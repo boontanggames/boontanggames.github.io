@@ -1,35 +1,26 @@
 # Boontang Games website
 
-The official static website for **boontanggames.com**, built for GitHub Pages.
+Official website: https://boontanggames.com
 
-## Pages
-- \`index.html\` — studio homepage and Eggy Weggy showcase
-- \`eggy-weggy.html\` — dedicated Eggy Weggy information and screenshots
-- \`privacy.html\` — website-only privacy information, not an app privacy policy
-- \`404.html\` — friendly fallback page
-- \`styles.css\` — responsive stylesheet (no JavaScript or external CDN)
-- \`assets/\` — brand symbol, screenshots copied from the owner's Eggy Weggy repository, and local headline font
+## Mobile-first redesign
 
-## Important notes before merging
+This version replaces the earlier overly decorative design with a simplified, professional layout built around the official Boontang Games branding. It uses a compact **dragon-head logo** plus type in the header, and limits the complete logo's width to avoid horizontal overflow.
 
-1. **Official logo:** Full logo and head-only artwork are now web-optimised transparent images from the owner's logo pack, replacing the temporary dragon badge. Original SVG and PNG masters remain in the owner's separately supplied logo ZIP.
-2. **Screenshots**: four images were copied from the private **boontanggames/Eggy-weggy** development repository into this public website. These are actual game-development screenshots, not synthetic stock images. Review each for accuracy against the release build before public marketing.
-3. **Game status**: Eggy Weggy is described as an Android project in development. Do not link a private development APK or claim the app is live in Google Play.
-4. **Privacy**: \`privacy.html\` describes the website *only*. Do **not** submit it as Eggy Weggy's Google Play privacy policy. The game needs a separate, verified policy covering actual SDKs, data handling, age gates and purchasing before store release.
-5. **Support**: a public support email is not yet configured. No address is invented. Once configured, add real contact details.
-6. **Publisher**: don't create a fictional \`app-ads.txt\`. Generate it from the actual AdMob publisher account once established.
-7. **Licensing**: the local Lilita One font is distributed with its OFL license under \`licenses/Lilita-One-OFL.txt\`.
+- \`index.html\` — studio homepage
+- \`eggy-weggy.html\` — Eggy Weggy information and development screenshots
+- \`privacy.html\` — website-only privacy notice
+- \`404.html\` — not-found page
+- \`styles.css\` — fully replaced, responsive stylesheet
+- \`assets/boontang-head.webp\` — official logo pack head icon
+- \`assets/boontang-logo.webp\` — official full logo
+- \`assets/eggy-*.png\` — development screenshots from the private game repository, already present in the previous release
 
-## Publishing
+The site retains \`CNAME\` with \`boontanggames.com\`. It requires no DNS changes, hosting upgrades or JavaScript.
 
-Open the draft pull request, inspect the page and screenshot changes, then merge when approved. The current \`CNAME\` file remains unchanged as \`boontanggames.com\`. GitHub Pages is already configured; a merge to \`main\` should automatically deploy the updated site. Do not modify Namecheap or Cloudflare DNS for this redesign.
+## Before merging
 
-## Testing checklist
+Review the three pages on a 320px/360px/390px/430px phone and desktop, test browser zoom, and confirm there is no horizontal scrolling. The head icon should stay small in the header and the full logo must be limited to the hero area. The stylesheet link includes a version query to avoid a stale browser cache of the earlier large-logo CSS.
 
-- Inspect navigation and pages on Android (320px and 390px widths) and desktop.
-- Confirm all screenshots load on the public site; no 404 errors.
-- Confirm headers, cards and CTA do not overflow at 200% text zoom.
-- Check that \`https://boontanggames.com/\`, \`/eggy-weggy.html\` and \`/privacy.html\` are HTTPS.
-- Confirm Eggy Weggy is the **only** game featured; there is no Field Command content.
-- Check keyboard navigation, alt text and reduced-motion behaviour.
-- Verify the official full logo and head emblem appear correctly in the header, hero, footer, studio section and browser icon.
+The website privacy page is **not** an Eggy Weggy app privacy policy. A complete app-specific policy, business contact information, and AdMob app-ads.txt seller declaration are still needed for a public Google Play launch. Never publish a private preview APK or invent a Play Store link.
+
+The site contains no references to Field Command, no analytics, no third-party script, and no paid services.
