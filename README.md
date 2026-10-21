@@ -12,7 +12,7 @@ The official static website for **boontanggames.com**, built for GitHub Pages.
 
 ## Important notes before merging
 
-1. **Dragon badge**: the included \`assets/dragon-mark.svg\` is a newly drawn *temporary* winking-dragon mark, not the owner's previously commissioned original logo. Replace it with the original supplied logo asset before treating it as final branding.
+1. **Official logo:** Full logo and head-only artwork are now web-optimised transparent images from the owner's logo pack, replacing the temporary dragon badge. Original SVG and PNG masters remain in the owner's separately supplied logo ZIP.
 2. **Screenshots**: four images were copied from the private **boontanggames/Eggy-weggy** development repository into this public website. These are actual game-development screenshots, not synthetic stock images. Review each for accuracy against the release build before public marketing.
 3. **Game status**: Eggy Weggy is described as an Android project in development. Do not link a private development APK or claim the app is live in Google Play.
 4. **Privacy**: \`privacy.html\` describes the website *only*. Do **not** submit it as Eggy Weggy's Google Play privacy policy. The game needs a separate, verified policy covering actual SDKs, data handling, age gates and purchasing before store release.
@@ -32,4 +32,4 @@ Open the draft pull request, inspect the page and screenshot changes, then merge
 - Check that \`https://boontanggames.com/\`, \`/eggy-weggy.html\` and \`/privacy.html\` are HTTPS.
 - Confirm Eggy Weggy is the **only** game featured; there is no Field Command content.
 - Check keyboard navigation, alt text and reduced-motion behaviour.
-- Replace temporary dragon badge with owner's original image and rerun checks.
+- Verify the official full logo and head emblem appear correctly in the header, hero, footer, studio section and browser icon.
