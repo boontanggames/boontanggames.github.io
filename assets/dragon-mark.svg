@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" role="img" aria-labelledby="title desc"><title id="title">Boontang Games dragon badge</title><desc id="desc">Friendly green cartoon dragon with one winking eye and a smile</desc>
+<defs><linearGradient id="bg" x1="0" x2="1" y1="0" y2="1"><stop stop-color="#FCE96B"/><stop offset="1" stop-color="#FFB1B6"/></linearGradient><linearGradient id="face" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#9BE67D"/><stop offset="1" stop-color="#40B98B"/></linearGradient></defs>
+<circle cx="64" cy="64" r="60" fill="url(#bg)" stroke="#19152E" stroke-width="5"/>
+<path d="M28 56 18 37 47 48M84 48 112 33 103 60" fill="#FFA267" stroke="#19152E" stroke-width="5" stroke-linejoin="round"/>
+<path d="M26 68C23 39 45 25 70 27c28 0 44 19 39 46l-5 27c-3 13-18 19-39 19-28 0-44-10-44-29z" fill="url(#face)" stroke="#19152E" stroke-width="5" stroke-linejoin="round"/>
+<path d="M27 78c-4-11 1-18 9-18M98 66c9 2 13 8 12 16" fill="none" stroke="#19152E" stroke-width="5" stroke-linecap="round"/>
+<path d="M40 61c7-7 15-6 22 0" fill="none" stroke="#19152E" stroke-width="5" stroke-linecap="round"/>
+<ellipse cx="85" cy="63" rx="5" ry="7" fill="#19152E"/><circle cx="87" cy="61" r="1.5" fill="#fff"/>
+<path d="M47 83c13-8 30-8 45-3 7 3 10 10 8 17-3 12-29 18-47 12-12-4-18-15-6-26z" fill="#A9EFAD" stroke="#19152E" stroke-width="4"/>
+<path d="M54 91c11 10 26 9 36 1" fill="none" stroke="#19152E" stroke-width="4" stroke-linecap="round"/>
+<circle cx="53" cy="83" r="3" fill="#36896F"/><circle cx="90" cy="84" r="3" fill="#36896F"/>
+<ellipse cx="33" cy="79" rx="6" ry="4" fill="#FF8E99" opacity=".9"/><ellipse cx="101" cy="76" rx="6" ry="4" fill="#FF8E99" opacity=".9"/>
+<path d="M45 30 47 20 58 30M73 29 83 18 88 35" fill="#B289F4" stroke="#19152E" stroke-width="4" stroke-linejoin="round"/>
+</svg>
