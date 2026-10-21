@@ -9,6 +9,7 @@ This version replaces the earlier overly decorative design with a simplified, pr
 - \`index.html\` — studio homepage
 - \`eggy-weggy.html\` — Eggy Weggy information and development screenshots
 - \`privacy.html\` — website-only privacy notice
+- \`eggy-weggy-privacy.html\` — Eggy Weggy Android privacy policy
 - \`404.html\` — not-found page
 - \`styles.css\` — fully replaced, responsive stylesheet
 - \`assets/boontang-head.webp\` — official logo pack head icon
@@ -21,6 +22,6 @@ The site retains \`CNAME\` with \`boontanggames.com\`. It requires no DNS change
 
 Review the three pages on a 320px/360px/390px/430px phone and desktop, test browser zoom, and confirm there is no horizontal scrolling. The head icon should stay small in the header and the full logo must be limited to the hero area. The stylesheet link includes a version query to avoid a stale browser cache of the earlier large-logo CSS.
 
-The website privacy page is **not** an Eggy Weggy app privacy policy. A complete app-specific policy, business contact information, and AdMob app-ads.txt seller declaration are still needed for a public Google Play launch. Never publish a private preview APK or invent a Play Store link.
+The game policy is at https://boontanggames.com/eggy-weggy-privacy.html, with **Kenneth Burton trading as Boontang Games** as controller and **boontanggames@gmail.com** as the public privacy/support contact. The separate website notice remains at `privacy.html`. Keep the policy aligned with the distributed Android build. An in-app copy/link, accurate Play declarations and the authentic AdMob app-ads.txt seller declaration remain part of the public Google Play launch setup. Never publish a private preview APK or invent a Play Store link.
 
 The site contains no references to Field Command, no analytics, no third-party script, and no paid services.

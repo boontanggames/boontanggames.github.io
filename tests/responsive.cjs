@@ -18,7 +18,7 @@ const assert = require('node:assert/strict');
     }
     assert(ready, 'Local site server failed to start');
     browser = await chromium.launch({ headless: true });
-    for (const path of ['/', '/eggy-weggy.html', '/privacy.html', '/missing-page']) {
+    for (const path of ['/', '/eggy-weggy.html', '/privacy.html', '/eggy-weggy-privacy.html', '/missing-page']) {
       for (const width of [320, 360, 390, 430, 768, 1280]) {
         const page = await browser.newPage({ viewport: { width, height: 850 }, deviceScaleFactor: 1 });
         const response = await page.goto('http://127.0.0.1:4173' + path, { waitUntil: 'networkidle' });

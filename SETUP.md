@@ -1,12 +1,12 @@
 # Boontang Games website setup
 
-This is a draft static site for **boontanggames.com**, hosted free using GitHub Pages.
+This is the static site for **boontanggames.com**, hosted free using GitHub Pages.
 
 ## Review first
 - Review the homepage and Eggy Weggy description for accuracy.
-- Replace the temporary **B✦** monogram with your **actual winking dragon logo** once the original asset is available and licensed for public use.
-- Supply a public support email when ready; no private personal email has been published.
-- The included `privacy.html` is **website information only**. Do **not** submit it as an app privacy policy to Google Play. Audit Eggy Weggy's actual Android SDKs and data flows and publish a complete, accurate app-specific policy before release.
+- The official winking dragon logo and game screenshots are already included. Keep the mobile layout checks passing when changing them.
+- Public support/privacy email: **boontanggames@gmail.com**. Operator: **Kenneth Burton, trading as Boontang Games**. These details were supplied for this purpose by the owner.
+- `privacy.html` covers the website. `eggy-weggy-privacy.html` is the dedicated Android game policy. Its public URL is https://boontanggames.com/eggy-weggy-privacy.html. Check the actual distributed build, in-app policy access and matching Data safety/target-audience declarations before a store submission.
 - The site intentionally does not link to the private Eggy Weggy repository or imply it is available on Google Play. Add real public download links only after publication.
 
 ## Publish on GitHub Pages
@@ -30,8 +30,7 @@ This is a draft static site for **boontanggames.com**, hosted free using GitHub 
 The site uses plain HTML and CSS with no third-party scripts, build tools or external fonts. It should be easy to edit in GitHub, Codex or any text editor.
 
 ## Future content
-- Upload the original winking dragon logo.
-- Replace the illustrative egg artwork with actual authorised game screenshots.
-- Publish a genuine support mailbox and an accurate Eggy Weggy app privacy policy.
+- Keep the policy and public contact details current if the operator, advertising, purchase or data-handling arrangements change.
+- Include the policy and public contact in the next Android update; the existing installed APK is not changed by publishing this website.
 - Update release/store links after public launches.
 - Add pages for other games only if you decide to develop and release them in future.
