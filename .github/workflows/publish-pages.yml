@@ -21,37 +21,11 @@ jobs:
       GH_TOKEN: ${{ github.token }}
       EXPECTED_COMMIT: ${{ github.sha }}
     steps:
+      - name: Check out the dispatched source
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          persist-credentials: false
+      - name: Test publication state handling
+        run: python3 -m unittest discover -s .github/scripts -p 'test_publish_pages.py' -v
       - name: Publish the existing main-branch website
-        run: |
-          python3 - <<'PY'
-          import json, os, subprocess, time
-
-          repository = os.environ['GITHUB_REPOSITORY']
-          expected = os.environ['EXPECTED_COMMIT']
-          def api(path, method='GET'):
-              return json.loads(subprocess.check_output(
-                  ['gh', 'api', '--method', method, path], text=True))
-
-          settings = api(f'repos/{repository}/pages')
-          if (settings.get('build_type') != 'legacy'
-                  or settings.get('source') != {'branch': 'main', 'path': '/'}
-                  or settings.get('cname') != 'boontanggames.com'):
-              raise SystemExit('Pages source/domain changed; inspect before publishing')
-          head = api(f'repos/{repository}/commits/main?check={time.time_ns()}')['sha']
-          if head != expected:
-              raise SystemExit('Main moved after dispatch; publish its current revision separately')
-          api(f'repos/{repository}/pages/builds', 'POST')
-          print(f'Requested the configured Pages build for {expected}', flush=True)
-          for _ in range(30):
-              result = api(f'repos/{repository}/pages/builds/latest?check={time.time_ns()}')
-              if result.get('commit') == expected:
-                  status = result.get('status')
-                  if status == 'built':
-                      print('Published https://boontanggames.com/', flush=True)
-                      break
-                  if status == 'errored':
-                      raise SystemExit(f'Pages failed: {result.get("error")}')
-              time.sleep(10)
-          else:
-              raise SystemExit('The requested Pages build has not completed; inspect it before retrying')
-          PY
+        run: python3 .github/scripts/publish_pages.py
