@@ -1,5 +1,31 @@
 # Eggy Weggy public privacy notice
 
+## Current 1.20 notice and standing release requirement
+
+Reviewed and updated **23 October 2026** for the published **1.20.0 / code 31**
+GitHub testing APK. The public page follows the policy actually packaged in
+game source `1307d22cda8bda1455dc3b7727cefd32a51cb7b0`, with website-specific
+version/date context. It explains the advertising pause and local development
+rewards, optional device-local lives reminders, disabled friend-request push,
+virtual-coin clothing and owned-item backups, and the separate adult cloud flow.
+It retains the SDK traffic, account, deletion and family-service acceptance limits.
+
+The owner requires the **online policy and bundled in-game notice to be reviewed
+for every APK release**. Update both when disclosures change, verify the exact
+APK's notice and the normal public HTTPS response before publishing the APK,
+and record version, source, hashes and results. If practices have not changed,
+record that review rather than inventing a new policy amendment date. Website
+publication cannot change a notice inside an existing installed APK.
+
+The game repository's `AGENTS.md` and `docs/release-checklist.md` record this
+standing instruction. The current website change passed six focused layouts,
+including enlarged text, all 87 canonical content blocks and 13 section links;
+the published APK's notice and bundle were byte-compared with the reviewed
+source. Final public-response/deployment proof belongs in the game's versioned
+privacy-publication audit after deployment, not in a claim based on pushing source.
+
+## Historical 1.19 preparation and earlier publication
+
 Reviewed 22 October 2026 at the owner's instruction to update the website.
 
 - Public policy: https://boontanggames.com/eggy-weggy-privacy.html
