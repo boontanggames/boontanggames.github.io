@@ -1,7 +1,7 @@
 {
   "scope": "Local website QA in one Chromium process; not Android/physical-device or deployed-site testing",
   "passed": true,
-  "gameScreenshotSourceCommit": "553a98a28c9ef8a8c381cab6150af493ef041879",
+  "gameScreenshotSourceCommit": "9ba1ff8d4c9bf70da5c9f5e2b5d71e2d245b055a",
   "browser": "154.0.8037.57",
   "concurrentChromiumLimit": 1,
   "normalViewportCases": 35,
@@ -110,5 +110,14 @@
     "Installed Android testing",
     "Physical-device testing",
     "Full accessibility conformance certification"
-  ]
+  ],
+  "finalScreenshotRefresh": {
+    "allSixPixelLossless": true,
+    "dimensions": [
+      412,
+      915
+    ],
+    "sourceCssHashVerified": "258fd31ee3b377fe0dfc2f5350ebc6e47ca5981ba9e1b1483fda874d8e080a70",
+    "websiteMarkupAndGalleryUnchanged": true
+  }
 }

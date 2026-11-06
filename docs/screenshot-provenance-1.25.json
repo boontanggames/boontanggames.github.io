@@ -10,11 +10,11 @@
       "description": "Actual Home, local profile and new Events entry with synthetic campaign history",
       "width": 412,
       "height": 915,
-      "rawSha256": "3439e63dfbb63ca5ffa22eb738c06721564bafb8fcfea8cdb54f1e34a2fad6b2",
+      "rawSha256": "c1a493b367943867cd0e2c54d3a901cfe236c078b5188645959587fa5b79e889",
       "game": 301,
       "asset": "assets/eggy-home-125.webp",
-      "webpSha256": "f6cb8db9e54ac9f91bb0b70cd6944c629d53c206ab2dd084df46424af2ff3476",
-      "bytes": 117154,
+      "webpSha256": "713c948649bc350a7db4bb399fa5105e69b00477d2a97f09fe0dab5ce8300d85",
+      "bytes": 117214,
       "losslessPixelMatch": true
     },
     {
@@ -22,11 +22,11 @@
       "description": "Actual current-week circuit and reward, no clock override",
       "width": 412,
       "height": 915,
-      "rawSha256": "114b6b9d3a3390df902f4a79e6bc9b349c5710da98597f42567a496bc47bffae",
+      "rawSha256": "0b68cddd8b354f2e6d8b900fa98272d4612bfb9e5282c3f77f6caf1a5ad648ec",
       "game": 301,
       "asset": "assets/eggy-events-125.webp",
-      "webpSha256": "3789fdde1e302c4c53bee9badeed3b0789eebc3f72e3d20f18f5a3b74e57b49f",
-      "bytes": 45914,
+      "webpSha256": "b33c54fe9891084f2c8c151dbaa97bf6f68953c655932b55a847945938424981",
+      "bytes": 45902,
       "losslessPixelMatch": true
     },
     {
@@ -46,11 +46,11 @@
       "description": "Actual paired-portal board and held chain; no generated image art",
       "width": 412,
       "height": 915,
-      "rawSha256": "ee440ca76acbeb973a4842d7d5548ef86ca0093958cc6101f12a64bf66a1ebcb",
+      "rawSha256": "0cf42137b528233db4ef03d9899e5685d0c564990ed17964d0be20a1c640322c",
       "game": 301,
       "asset": "assets/eggy-portals-125.webp",
-      "webpSha256": "993e3d333e93c031ca587fb0e19f66d7cd1b13e790cdf75ae82e1a68d323dc7b",
-      "bytes": 298512,
+      "webpSha256": "af7db9c1e400cf347ad0f9540af559615bc380e01d64d64caf5907f4af5e0cd4",
+      "bytes": 298496,
       "losslessPixelMatch": true
     },
     {
@@ -85,8 +85,11 @@
   "sourceHashes": {
     "web/bundle.js": "2b3de414386f30037ad21605529d31d3532e9d3a5f4130ed24b331e55dbce64e",
     "web/engine.js": "0bb2079c85744e94228d9dda901ef1f2cf752e228ca273beeebffc368b8e5db8",
-    "web/app.js": "6608e68bc36157281fd12c0ea0ddf99b7dbdd5881086ca47442810efeb59fae9"
+    "web/app.js": "6608e68bc36157281fd12c0ea0ddf99b7dbdd5881086ca47442810efeb59fae9",
+    "web/update125.css": "258fd31ee3b377fe0dfc2f5350ebc6e47ca5981ba9e1b1483fda874d8e080a70"
   },
-  "gameSourceCommit": "553a98a28c9ef8a8c381cab6150af493ef041879",
-  "captureEnvironment": "Production game assets and controls rendered in desktop Chromium at a 412\u00d7915 mobile viewport; not an installed Android or physical-device capture."
+  "sourceCommit": "9ba1ff8d4c9bf70da5c9f5e2b5d71e2d245b055a",
+  "captureEnvironment": "Production game assets rendered in desktop Chromium at 412\u00d7915; not an installed Android or physical-phone capture",
+  "sourceCommitHashesVerified": true,
+  "capturedAtUtc": "2026-11-06T14:17:44.748350+00:00"
 }
