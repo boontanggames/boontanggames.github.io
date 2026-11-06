@@ -1,0 +1,114 @@
+{
+  "scope": "Local website QA in one Chromium process; not Android/physical-device or deployed-site testing",
+  "passed": true,
+  "gameScreenshotSourceCommit": "553a98a28c9ef8a8c381cab6150af493ef041879",
+  "browser": "154.0.8037.57",
+  "concurrentChromiumLimit": 1,
+  "normalViewportCases": 35,
+  "normalViewportWidths": [
+    320,
+    360,
+    390,
+    430,
+    768,
+    1280,
+    1600
+  ],
+  "largeTextCases": 10,
+  "textResizePercent": 200,
+  "largeTextWidths": [
+    320,
+    1280
+  ],
+  "pages": [
+    "/",
+    "/eggy-weggy.html",
+    "/privacy.html",
+    "/eggy-weggy-privacy.html",
+    "/404.html"
+  ],
+  "zeroHorizontalOverflow": true,
+  "allImagesLoaded": true,
+  "portraitImagesUncropped": true,
+  "sixScreenshotHashesMatchProvenance": true,
+  "localFontsLoaded": true,
+  "unexpectedThirdPartyRequests": 0,
+  "pageScriptErrors": 0,
+  "navigationAndPrimaryButtonsAtLeast44px": true,
+  "interactions": {
+    "screenshotsOpenedByKeyboard": 6,
+    "focusTrapTabs": 12,
+    "arrowKeys": true,
+    "previousNext": true,
+    "wrapNavigation": true,
+    "escapeAndFocusReturn": true,
+    "closeButton": true,
+    "backdropClose": true,
+    "reducedMotion": true,
+    "largeTextDialog": true,
+    "noJavaScriptImageLinks": true
+  },
+  "visualInspection": [
+    "Desktop studio and game heroes",
+    "390px studio and game pages",
+    "390px game privacy",
+    "Mobile screenshot dialog with all image content and controls visible",
+    "200% text screenshot dialog"
+  ],
+  "correctedIssues": [
+    "Mobile navigation increased from42px to44px",
+    "Explicit dialog Tab wrapping",
+    "Font-independent decorative outbound arrows"
+  ],
+  "sourceHashes": {
+    "index.html": "83a42710a9374fdd1a88743e7bfefdef273a9124971c05bb12a4f56f402b41cc",
+    "eggy-weggy.html": "0b39bebd5570489c673455ed946c2cef0ca190fef012d6d68b21385b94686257",
+    "styles.css": "76698a994c734b9d817479d2cf80b267165b7dfbbdc430d581213bc135d7a2f7",
+    "gallery.js": "bb75c90b5ec8710c2f3b63fa8c4d5fda12a34bb249fe11361b4c7a103c6ee436"
+  },
+  "screenshots": [
+    {
+      "asset": "assets/eggy-home-125.webp",
+      "bytes": 117154,
+      "sha256": "f6cb8db9e54ac9f91bb0b70cd6944c629d53c206ab2dd084df46424af2ff3476",
+      "losslessPixelMatch": true
+    },
+    {
+      "asset": "assets/eggy-events-125.webp",
+      "bytes": 45914,
+      "sha256": "3789fdde1e302c4c53bee9badeed3b0789eebc3f72e3d20f18f5a3b74e57b49f",
+      "losslessPixelMatch": true
+    },
+    {
+      "asset": "assets/eggy-map-125.webp",
+      "bytes": 129074,
+      "sha256": "0929619099180cef6e3c50449224742d1b45d46e8ea0bc3de37060abb1fa7d4c",
+      "losslessPixelMatch": true
+    },
+    {
+      "asset": "assets/eggy-portals-125.webp",
+      "bytes": 298512,
+      "sha256": "993e3d333e93c031ca587fb0e19f66d7cd1b13e790cdf75ae82e1a68d323dc7b",
+      "losslessPixelMatch": true
+    },
+    {
+      "asset": "assets/eggy-sunshine-125.webp",
+      "bytes": 312486,
+      "sha256": "d61efef533ca45100b201d66cd5e72397287ca58bb76afefd3f55b12a5a50507",
+      "losslessPixelMatch": true
+    },
+    {
+      "asset": "assets/eggy-house-125.webp",
+      "bytes": 77748,
+      "sha256": "3097424066422e02b394275647b8fba706cb9425469ac5b5b022f4ec6299f9e1",
+      "losslessPixelMatch": true
+    }
+  ],
+  "finishedAt": "2026-11-06T13:59:36.239Z",
+  "notPerformed": [
+    "Public deployment verification",
+    "Installed Android testing",
+    "Physical-device testing",
+    "Full accessibility conformance certification"
+  ]
+}

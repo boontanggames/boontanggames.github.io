@@ -1,0 +1,92 @@
+{
+  "version": "1.25.0",
+  "dimensions": [
+    412,
+    915
+  ],
+  "screenshots": [
+    {
+      "name": "eggy-home-125",
+      "description": "Actual Home, local profile and new Events entry with synthetic campaign history",
+      "width": 412,
+      "height": 915,
+      "rawSha256": "3439e63dfbb63ca5ffa22eb738c06721564bafb8fcfea8cdb54f1e34a2fad6b2",
+      "game": 301,
+      "asset": "assets/eggy-home-125.webp",
+      "webpSha256": "f6cb8db9e54ac9f91bb0b70cd6944c629d53c206ab2dd084df46424af2ff3476",
+      "bytes": 117154,
+      "losslessPixelMatch": true
+    },
+    {
+      "name": "eggy-events-125",
+      "description": "Actual current-week circuit and reward, no clock override",
+      "width": 412,
+      "height": 915,
+      "rawSha256": "114b6b9d3a3390df902f4a79e6bc9b349c5710da98597f42567a496bc47bffae",
+      "game": 301,
+      "asset": "assets/eggy-events-125.webp",
+      "webpSha256": "3789fdde1e302c4c53bee9badeed3b0789eebc3f72e3d20f18f5a3b74e57b49f",
+      "bytes": 45914,
+      "losslessPixelMatch": true
+    },
+    {
+      "name": "eggy-map-125",
+      "description": "Actual continuous map at Crystal Caverns, earlier stages synthetically completed",
+      "width": 412,
+      "height": 915,
+      "rawSha256": "ff9b802f1758e4778a34f35a900c9dbbdd9e486d0777d89417699e5318eddc23",
+      "game": 301,
+      "asset": "assets/eggy-map-125.webp",
+      "webpSha256": "0929619099180cef6e3c50449224742d1b45d46e8ea0bc3de37060abb1fa7d4c",
+      "bytes": 129074,
+      "losslessPixelMatch": true
+    },
+    {
+      "name": "eggy-portals-125",
+      "description": "Actual paired-portal board and held chain; no generated image art",
+      "width": 412,
+      "height": 915,
+      "rawSha256": "ee440ca76acbeb973a4842d7d5548ef86ca0093958cc6101f12a64bf66a1ebcb",
+      "game": 301,
+      "asset": "assets/eggy-portals-125.webp",
+      "webpSha256": "993e3d333e93c031ca587fb0e19f66d7cd1b13e790cdf75ae82e1a68d323dc7b",
+      "bytes": 298512,
+      "losslessPixelMatch": true
+    },
+    {
+      "name": "eggy-sunshine-125",
+      "description": "Actual Sun wand use then held sunshine chain with genuine blast preview",
+      "width": 412,
+      "height": 915,
+      "rawSha256": "e20c0d7c7f3dae0bf15518f37fe3b74350aa64d495aadcef1bc2ee8339542c9e",
+      "game": 11,
+      "asset": "assets/eggy-sunshine-125.webp",
+      "webpSha256": "d61efef533ca45100b201d66cd5e72397287ca58bb76afefd3f55b12a5a50507",
+      "bytes": 312486,
+      "losslessPixelMatch": true
+    },
+    {
+      "name": "eggy-house-125",
+      "description": "Actual Egg House visit with earned crystal background and decoration from synthetic completed campaign history",
+      "width": 412,
+      "height": 915,
+      "rawSha256": "e88125b5c77e5fb3fe4d46a198ef60d0868c2d49c6749aca9570c01252bb418e",
+      "game": 400,
+      "asset": "assets/eggy-house-125.webp",
+      "webpSha256": "3097424066422e02b394275647b8fba706cb9425469ac5b5b022f4ec6299f9e1",
+      "bytes": 77748,
+      "losslessPixelMatch": true
+    }
+  ],
+  "syntheticProgressForDemonstration": true,
+  "actualProductionControls": true,
+  "generatedOrRetouchedImages": false,
+  "clockOverridden": false,
+  "sourceHashes": {
+    "web/bundle.js": "2b3de414386f30037ad21605529d31d3532e9d3a5f4130ed24b331e55dbce64e",
+    "web/engine.js": "0bb2079c85744e94228d9dda901ef1f2cf752e228ca273beeebffc368b8e5db8",
+    "web/app.js": "6608e68bc36157281fd12c0ea0ddf99b7dbdd5881086ca47442810efeb59fae9"
+  },
+  "gameSourceCommit": "553a98a28c9ef8a8c381cab6150af493ef041879",
+  "captureEnvironment": "Production game assets and controls rendered in desktop Chromium at a 412\u00d7915 mobile viewport; not an installed Android or physical-device capture."
+}

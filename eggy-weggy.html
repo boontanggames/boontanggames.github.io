@@ -1,40 +1,62 @@
 <!doctype html>
 <html lang="en-GB">
 <head>
-<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="theme-color" content="#141416">
-<meta name="description" content="Eggy Weggy is a colourful Android puzzle game in development by Boontang Games. Discover the 100-level campaign and sunshine combinations.">
-<meta property="og:title" content="Eggy Weggy | Boontang Games">
-<meta property="og:description" content="Connect colourful eggs, discover sunshine combinations and explore two puzzle chapters.">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#202021">
+<meta name="description" content="Discover Eggy Weggy: a colourful Android chain puzzle adventure with 400 levels, six chapters, sunshine combinations and an Egg House of your own. Development preview by Boontang Games.">
+<meta property="og:title" content="Eggy Weggy — Find your next good move.">
+<meta property="og:description" content="Connect colourful eggs, light up the board and explore six puzzle worlds. See actual screenshots from the Android development preview.">
 <meta property="og:type" content="website">
+<meta property="og:url" content="https://boontanggames.com/eggy-weggy.html">
+<meta property="og:image" content="https://boontanggames.com/assets/eggy-home-125.webp">
 <link rel="canonical" href="https://boontanggames.com/eggy-weggy.html">
 <link rel="icon" type="image/webp" href="assets/boontang-head.webp">
-<link rel="stylesheet" href="styles.css?v=clean-mobile-3">
-<style>html,body{max-width:100%}*,*::before,*::after{box-sizing:border-box}img{max-width:100%;height:auto}.brand-avatar{width:40px;height:40px;object-fit:contain}</style>
-<title>Eggy Weggy | Boontang Games</title>
+<link rel="preload" href="assets/lilita-one.ttf" as="font" type="font/ttf" crossorigin>
+<link rel="stylesheet" href="styles.css?v=adventure-125">
+<script src="gallery.js?v=adventure-125" defer></script>
+<title>Eggy Weggy — Find your next good move. | Boontang Games</title>
 </head>
-<body>
+<body class="game-page">
 <a class="skip-link" href="#main">Skip to content</a>
-<header class="site-header"><div class="container header-content"><a class="brand" href="/" aria-label="Boontang Games home"><img class="brand-avatar" src="assets/boontang-head.webp" width="40" height="40" alt=""><span class="brand-name">BOONTANG <b>GAMES</b></span></a><nav class="navigation" aria-label="Main navigation"><a href="/">Home</a><a href="#features">Features</a><a class="nav-extra" href="#screenshots">Screenshots</a></nav></div></header>
+<header class="site-header"><div class="container header-content"><a class="brand" href="/" aria-label="Boontang Games home"><img class="brand-avatar" src="assets/boontang-head.webp" width="40" height="40" alt=""><span class="brand-name">BOONTANG <b>GAMES</b></span></a><nav class="navigation" aria-label="Main navigation"><a href="/">The studio</a><a href="#screenshots">See the game</a><a href="#play">Play the preview <span aria-hidden="true"><svg class="arrow-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true" focusable="false"><path d="M6 18 18 6M6 6h12v12" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/></svg></span></a></nav></div></header>
 <main id="main">
-<section class="game-hero">
- <div class="container game-hero-layout">
-  <div><p class="eyebrow eyebrow-light">AN ORIGINAL BOONTANG GAMES PROJECT</p><h1>Eggy<br><em>Weggy.</em></h1><p>A colourful, charming puzzle adventure that rewards a clever move.</p><a class="button button-orange" href="#features">Discover the game <span aria-hidden="true">↓</span></a></div>
-  <div class="game-hero-image"><img src="assets/eggy-map.png" width="390" height="844" alt="Eggy Weggy development screenshot featuring the cartoon chapter map"></div>
- </div>
-</section>
-<section class="section" id="features"><div class="container"><div class="section-intro"><p class="eyebrow">HOW IT PLAYS</p><h2>A little strategy.<br>A lot of personality.</h2><p>Plan chains, discover special effects and complete objectives to unlock the next challenge.</p></div><div class="feature-grid">
-<article><span class="feature-index">01</span><h3>Connect eggs</h3><p>Drag or tap through matching eggs to build a satisfying chain.</p></article>
-<article><span class="feature-index">02</span><h3>Make sunshine</h3><p>Longer chains can create powerful sunshine eggs and surprising combinations.</p></article>
-<article><span class="feature-index">03</span><h3>Go further</h3><p>Progress through 100 levels across two chapters, including tricky Bad Eggs.</p></article>
-</div></div></section>
-<section class="section gallery-section" id="screenshots"><div class="container"><div class="section-intro"><p class="eyebrow">INSIDE EGGY WEGGY</p><h2>See the game.</h2><p>Real screenshots from the development build. Visual details may change before the public release.</p></div><div class="gallery">
-<figure><img src="assets/eggy-gameplay.png" width="360" height="760" loading="lazy" alt="Eggy Weggy board with colourful eggs and score targets"><figcaption>Colourful puzzle chains</figcaption></figure>
-<figure><img src="assets/eggy-bad-eggs.png" width="360" height="760" loading="lazy" alt="Bad Eggs appearing on a puzzle board"><figcaption>Meet the Bad Eggs</figcaption></figure>
-<figure><img src="assets/eggy-chapter-two.png" width="390" height="844" loading="lazy" alt="Chapter two map in Eggy Weggy"><figcaption>Explore a second chapter</figcaption></figure>
-</div></div></section>
-<section class="section launch-section"><div class="container launch-layout"><div><p class="eyebrow">DEVELOPMENT STATUS</p><h2>In the works.</h2><p>Eggy Weggy is currently in development for Android. There isn't a public Google Play listing yet. This page will link to the official release when it's ready.</p></div><div class="launch-status"><span class="status-point" aria-hidden="true"></span><strong>Android development preview</strong><p>Public store release not yet available</p><p><a href="eggy-weggy-privacy.html">Read the game privacy policy</a></p></div></div></section>
+ <section class="eggy-hero">
+  <div class="container game-hero-layout">
+   <div class="game-intro"><p class="eyebrow eyebrow-gold">A Boontang Games adventure</p><h1>Eggy <span>Weggy.</span></h1><p class="game-tagline">A little strategy.<br>A big adventure.</p><p class="hero-description">Connect colourful eggs, make brilliant sunshine combinations and discover a world that keeps surprising you.</p><div class="button-row"><a class="button button-gold" href="#play">Try the development preview <span aria-hidden="true"><svg class="arrow-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true" focusable="false"><path d="M6 18 18 6M6 6h12v12" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/></svg></span></a><a class="text-link light-link" href="#screenshots">See it in play <span aria-hidden="true">↓</span></a></div><p class="preview-note"><span aria-hidden="true"></span> Android · In development · Not yet on Google Play</p></div>
+   <figure class="game-intro-screen"><span class="hero-spark spark-one" aria-hidden="true">✦</span><a class="portrait-frame" href="#screenshots" aria-label="Browse actual Eggy Weggy screenshots"><img src="assets/eggy-home-125.webp" width="412" height="915" alt="Eggy Weggy’s animated Home, with its colourful egg characters and Start button" fetchpriority="high"></a><figcaption>Let’s go on an eggventure.</figcaption></figure>
+  </div>
+ </section>
+ <div class="game-ribbon eggy-ribbon"><div class="container ribbon-content"><span><strong>400</strong> campaign levels</span><span class="ribbon-star" aria-hidden="true">✦</span><span><strong>6</strong> chapters to explore</span><span class="ribbon-star" aria-hidden="true">✦</span><span><strong>One</strong> very personal adventure</span></div></div>
+
+ <section class="section play-story" id="features" aria-labelledby="play-heading">
+  <div class="container">
+   <div class="section-heading"><p class="eyebrow">Find your flow</p><h2 id="play-heading">It starts with a chain.</h2><p>Simple to pick up. Plenty to think about.</p></div>
+   <div class="play-steps"><article><span class="step-number" aria-hidden="true">01</span><h3>Connect the colours.</h3><p>Drag through matching eggs, including diagonally, or use tap controls to plan your chain before you clear it.</p></article><article><span class="step-number" aria-hidden="true">02</span><h3>Let the sunshine in.</h3><p>Create a sunshine egg with a long chain. Add it to a chain of any colour and watch its row and column light up.</p></article><article><span class="step-number" aria-hidden="true">03</span><h3>Make every move count.</h3><p>Complete the goals, then use your remaining moves to push your score higher and reach for three stars.</p></article></div>
+  </div>
+ </section>
+
+ <section class="section worlds-section" id="worlds" aria-labelledby="worlds-heading">
+  <div class="container worlds-layout"><div><p class="eyebrow">The next chapter is calling</p><h2 id="worlds-heading">Six worlds.<br>New ways to play.</h2><p class="large-copy">From the Lowlands to the light of Crystal Caverns.</p><p>Vines, wandering Bad Eggs, moving conveyor belts and portal pairs change how you read the board. Learn their tricks, choose your route and keep the adventure moving.</p><ol class="world-route"><li><span aria-hidden="true">01</span> The Lowlands</li><li><span aria-hidden="true">02</span> Obsidian Reach</li><li><span aria-hidden="true">03</span> Verdant Wilds</li><li><span aria-hidden="true">04</span> Cloudtop Heights</li><li><span aria-hidden="true">05</span> Clockwork Gardens</li><li><span aria-hidden="true">06</span> Crystal Caverns</li></ol></div><figure class="worlds-preview"><div class="portrait-frame"><img src="assets/eggy-portals-125.webp" width="412" height="915" alt="Actual Crystal Caverns gameplay showing paired portals among the colourful eggs" loading="lazy"></div><figcaption>Crystal Caverns · A fresh twist on the board.</figcaption></figure></div>
+ </section>
+
+ <section class="section gallery-section" id="screenshots" aria-labelledby="gallery-heading">
+  <div class="container"><div class="section-heading gallery-heading"><div><p class="eyebrow">Straight from the game</p><h2 id="gallery-heading">Take a proper look.</h2></div><p>Actual screenshots from the development build.<br>Choose any image to see the full picture.</p></div>
+   <div class="gallery" aria-label="Eggy Weggy development screenshots">
+    <figure><a href="assets/eggy-sunshine-125.webp" data-lightbox="game" data-caption="Preview the sunshine blast"><img src="assets/eggy-sunshine-125.webp" width="412" height="915" loading="lazy" alt="A sunshine combination preview highlighting the eggs it will clear"><span class="expand-image" aria-hidden="true"><svg class="arrow-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true" focusable="false"><path d="M6 18 18 6M6 6h12v12" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/></svg></span></a><figcaption><span>01 / Play</span><h3>Preview the sunshine blast.</h3></figcaption></figure>
+    <figure><a href="assets/eggy-portals-125.webp" data-lightbox="game" data-caption="Find a new way through Crystal Caverns"><img src="assets/eggy-portals-125.webp" width="412" height="915" loading="lazy" alt="Paired portal gates on a Crystal Caverns puzzle board"><span class="expand-image" aria-hidden="true"><svg class="arrow-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true" focusable="false"><path d="M6 18 18 6M6 6h12v12" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/></svg></span></a><figcaption><span>02 / Discover</span><h3>Take a shortcut through portals.</h3></figcaption></figure>
+    <figure><a href="assets/eggy-map-125.webp" data-lightbox="game" data-caption="Follow your own winding adventure"><img src="assets/eggy-map-125.webp" width="412" height="915" loading="lazy" alt="The illustrated level map and its winding path between puzzles"><span class="expand-image" aria-hidden="true"><svg class="arrow-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true" focusable="false"><path d="M6 18 18 6M6 6h12v12" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/></svg></span></a><figcaption><span>03 / Explore</span><h3>Explore the winding map.</h3></figcaption></figure>
+    <figure><a href="assets/eggy-home-125.webp" data-lightbox="game" data-caption="An adventure with plenty of character"><img src="assets/eggy-home-125.webp" width="412" height="915" loading="lazy" alt="Eggy Weggy’s Home screen with your personalised egg"><span class="expand-image" aria-hidden="true"><svg class="arrow-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true" focusable="false"><path d="M6 18 18 6M6 6h12v12" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/></svg></span></a><figcaption><span>04 / Meet</span><h3>Your egg, at home.</h3></figcaption></figure>
+    <figure><a href="assets/eggy-house-125.webp" data-lightbox="game" data-caption="Make your Egg House your own"><img src="assets/eggy-house-125.webp" width="412" height="915" loading="lazy" alt="A decorated Egg House with a personalised egg and furnishings"><span class="expand-image" aria-hidden="true"><svg class="arrow-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true" focusable="false"><path d="M6 18 18 6M6 6h12v12" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/></svg></span></a><figcaption><span>05 / Make it yours</span><h3>Build your Egg House.</h3></figcaption></figure>
+    <figure><a href="assets/eggy-events-125.webp" data-lightbox="game" data-caption="A different challenge in weekly events"><img src="assets/eggy-events-125.webp" width="412" height="915" loading="lazy" alt="The weekly events screen showing a fresh set of game challenges"><span class="expand-image" aria-hidden="true"><svg class="arrow-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true" focusable="false"><path d="M6 18 18 6M6 6h12v12" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/></svg></span></a><figcaption><span>06 / Return</span><h3>Play this week’s circuit.</h3></figcaption></figure>
+   </div><p class="gallery-footnote">Development preview. Visual details may change before public release.</p>
+  </div>
+ </section>
+
+ <section class="section your-adventure" aria-labelledby="your-heading"><div class="container your-layout"><p class="eyebrow">More than the next level</p><h2 id="your-heading">Your egg.<br>Your space.</h2><div><p class="large-copy">Find your look. Make yourself at home.</p><p>Choose your egg’s colours and expression, put together an outfit and decorate your Egg House. Between campaign levels, weekly events offer a different challenge to come back to.</p><p>Play at your own pace. There’s plenty to make your own along the way.</p></div></div></section>
+
+ <section class="section testing-section" id="play" aria-labelledby="testing-heading"><div class="container testing-layout"><div><p class="eyebrow eyebrow-gold">The adventure is taking shape</p><h2 id="testing-heading">Want an early look?</h2><p>Eggy Weggy is in development for Android. We’re testing, improving and adding the details that make it feel right.</p><p>There’s no public Google Play listing yet. Email us to ask about a testing copy or share your feedback.</p><a class="button button-gold" href="mailto:boontanggames@gmail.com?subject=Eggy%20Weggy%20testing%20copy">Request a testing copy <span aria-hidden="true"><svg class="arrow-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true" focusable="false"><path d="M6 18 18 6M6 6h12v12" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/></svg></span></a></div><aside class="testing-note" aria-label="Development preview information"><span class="status-label"><span aria-hidden="true"></span> Android development preview</span><h3>Still growing.<br>Already full of character.</h3><p>Screenshots are from the current development build. The Google Play release is still in development.</p><a class="text-link light-link" href="eggy-weggy-privacy.html">Read the game privacy policy <span aria-hidden="true">→</span></a><a class="contact-address" href="mailto:boontanggames@gmail.com">boontanggames@gmail.com</a></aside></div></section>
 </main>
-<footer class="site-footer"><div class="container footer-main"><a class="brand" href="/" aria-label="Boontang Games home"><img class="brand-avatar" src="assets/boontang-head.webp" width="40" height="40" alt=""><span class="brand-name">BOONTANG <b>GAMES</b></span></a><nav aria-label="Footer links"><a href="/">Home</a><a href="eggy-weggy-privacy.html">Game privacy</a><a href="privacy.html">Website privacy</a><a href="https://github.com/boontanggames" rel="noopener noreferrer">GitHub</a></nav></div><div class="container footer-bottom"><span>© 2026 Boontang Games</span><span>Independent games studio · UK</span></div></footer>
+<footer class="site-footer"><div class="container footer-main"><a class="brand" href="/" aria-label="Boontang Games home"><img class="brand-avatar" src="assets/boontang-head.webp" width="40" height="40" alt=""><span class="brand-name">BOONTANG <b>GAMES</b></span></a><nav aria-label="Footer links"><a href="/">The studio</a><a href="eggy-weggy-privacy.html">Game privacy</a><a href="privacy.html">Website privacy</a><a href="https://github.com/boontanggames" rel="noopener noreferrer">GitHub</a></nav></div><div class="container footer-bottom"><span>© 2026 Boontang Games</span><span>Independent games · United Kingdom</span></div></footer>
 </body>
 </html>
